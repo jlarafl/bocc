@@ -492,3 +492,39 @@ a:hover {
         text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .grid {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto;
+    }
+
+    .grid>article img {
+        max-width: 180px;
+        height: 225px;
+    }
+
+    .banner {
+        max-width: 100%;
+        height: 34vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .grid>article {
+        max-width: 285px;
+        height: auto;
+    }
+
+    .bg-text h1 {
+        font-size: 52px;
+        visibility: hidden;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+
+    .bg-text h3 {
+        font-size: 36px;
+        visibility: hidden;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+}
